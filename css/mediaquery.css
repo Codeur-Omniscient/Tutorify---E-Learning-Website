@@ -1,0 +1,296 @@
+/*------------------------------*/
+/*        Above 575px           */
+/*------------------------------*/
+
+@media (min-width: 575px) {
+  /* General Style */
+  .container {
+    max-width: 500px;
+    margin-inline: auto;
+  }
+}
+
+/*------------------------------*/
+/*        Above 765px           */
+/*------------------------------*/
+
+@media (min-width: 765px) {
+  /* Root */
+  :root {
+    /* Typography */
+    --fontSize-3: 3.7rem;
+    --fontSize-4: 3.3rem;
+  }
+  /* General */
+  .container {
+    max-width: 720px;
+  }
+
+  .grid-box {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Lessons */
+  .lesson-content {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Service */
+  .service-content {
+    order: 1;
+  }
+
+  .service-description .section-text,
+  .work-content .ul-list .section-text {
+    padding-block: 1.2rem;
+  }
+
+  /* Service,Work,Cta */
+  .service-img,
+  .work-banner,
+  .cta-action {
+    display: grid;
+    place-content: center;
+  }
+
+  /* Testimonial */
+  .slider-box {
+    
+    padding-left: 1rem;
+  }
+
+  .btn-left {
+    transform: translate(0);
+  }
+
+  /* Footer */
+
+  .footer-list-item {
+    pointer-events: none;
+  }
+
+  .footer-list-item button {
+    display: none;
+  }
+
+  .footer-list-header,
+  .footer-list-item:last-child {
+    border: none;
+  }
+
+  .hidden-list {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding-inline-start: 3rem;
+    font-size: var(--fontSize-9);
+    color: #eee;
+    transition: all 0.7s;
+  }
+}
+
+/*------------------------------*/
+/*        Above 990px           */
+/*------------------------------*/
+
+@media (min-width: 990px) {
+  /* General */
+  .container {
+    max-width: 960px;
+    padding-inline: 20px;
+  }
+
+  body.nav-active {
+    overflow: auto;
+  }
+
+  .btn-box a {
+    font-size: var(--fontSize-7);
+    padding-block: 2.5rem;
+  }
+
+  /* Header */
+  .nav-open-btn,
+  .overlay {
+    display: none;
+  }
+
+  .nav-bar,
+  .nav-bar.active {
+    all: unset;
+    display: flex;
+    align-items: center;
+    gap: 7.4rem;
+  }
+
+  .nav-bar-list {
+    all: unset;
+    display: flex;
+    align-items: center;
+    gap: 2.8rem;
+  }
+
+  .nav-bar-link::before {
+    width: 20px;
+    height: 3px;
+    top: auto;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.6s ease-out;
+  }
+
+  .btn-link {
+    all: unset;
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+  }
+
+  .btn-link p {
+    display: none;
+  }
+
+  /* Find Tutor */
+  .outer-circle {
+    width: 38rem;
+    height: 38rem;
+  }
+
+  .inner-circle {
+    width: 32rem;
+    height: 32rem;
+  }
+
+  /* footer */
+  .footer-top .grid-box {
+    grid-template-columns: 0.5fr 1fr;
+  }
+
+  .footer-list {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
+
+/*------------------------------*/
+/*        Above 1200px          */
+/*------------------------------*/
+
+@media (min-width: 1200px) {
+  /* Generale */
+  :root {
+    --fontSize-3: 4.2rem;
+  }
+
+  .container {
+    max-width: 1150px;
+  }
+
+  .h2 {
+    font-size: var(--fontSize-2);
+  }
+
+  .h3 {
+    font-size: var(--fontSize-5);
+  }
+
+  .ul-item .section-text {
+    font-size: var(--fontSize-7);
+  }
+
+  .hero-text,
+  .section-text,
+  .lesson-text,
+  .footer-list-header {
+    font-size: var(--fontSize-6);
+  }
+
+  .section-text {
+    padding-block: 3.8rem;
+  }
+
+  .tutor-text {
+    font-size: var(--fontSize-8);
+  }
+
+  .ion-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  /* Header */
+  .btn-link {
+    gap: 3.2rem;
+  }
+
+  .tutor-img {
+    width: 4rem;
+  }
+
+  .tutor-list p {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  /* Find Tutor */
+  .btn-box {
+    display: flex;
+    gap: 2.2rem;
+  }
+
+  .btn-box a {
+    padding: 3rem;
+  }
+
+  .outer-circle {
+    width: 40rem;
+    height: 40rem;
+  }
+
+  .inner-circle {
+    width: 34rem;
+    height: 34rem;
+  }
+  /* Testimonial */
+  .testimonial-text,
+  .author-name {
+    font-size: var(--fontSize-7);
+  }
+  .author-status {
+    font-size: var(--fontSize-8);
+  }
+
+  /* cta */
+  .cta-section {
+    margin-block-end: 12rem;
+  }
+  /* footer */
+  .footer-top .grid-box {
+    grid-template-columns: 0.5fr 1.5fr;
+  }
+
+  .hidden-list,
+  .footer .section-text {
+    font-size: var(--fontSize-8);
+  }
+}
+
+/*------------------------------*/
+/*        Above 1400px          */
+/*------------------------------*/
+
+@media (min-width: 1400px) {
+  /* General */
+  :root {
+    --section-spacing: 120px;
+  }
+  .h1 {
+    font-size: var(--fontSize-1);
+  }
+
+  .container {
+    max-width: 1350px;
+  }
+}

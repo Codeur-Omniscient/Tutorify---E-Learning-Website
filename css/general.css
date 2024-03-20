@@ -1,0 +1,274 @@
+/*------------------------------*/
+/*        Custom style          */
+/*------------------------------*/
+
+:root {
+  /* COLORS */
+
+  /* Background color */
+  --bg-primary: #fb9c46;
+  --bg-linear-1: linear-gradient(#f1c365, #ff922f);
+  --bg-linear-2: linear-gradient(#ff922f, #f2bf62);
+  --bg-secondary: #058e6e;
+  --bg-tertiary: #f2bf62;
+
+  /* Text color */
+
+  --text-white: #fff;
+  --text-light: #9f9f9f;
+  --text-grey: #6c6c6c;
+  --text-black: #393939;
+  --text-primary: #fb9c46;
+
+  /* Border color */
+
+  --border-primary: #fb9c46;
+
+  /* TYPOGRAPHY */
+
+  --fontFamily-Poppins: "Poppins", sans-serif;
+
+  --fontSize-1: 4.8rem;
+  --fontSize-2: 3.6rem;
+  --fontSize-3: 3.2rem;
+  --fontSize-4: 3rem;
+  --fontSize-5: 2rem;
+  --fontSize-6: 1.8rem;
+  --fontSize-7: 1.6rem;
+  --fontSize-8: 1.4rem;
+  --fontSize-9: 1.2rem;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semiBold: 600;
+  --weight-bold: 700;
+
+  /* Spacing */
+
+  --section-spacing: 90px;
+
+  /* Shadow */
+
+  --shadow-1: drop-shadow(0 20px 30px rgba(5, 142, 110, 0.14));
+  --shadow-2: drop-shadow(0px 20px 4px rgba(255, 147, 47, 0.21));
+  --shadow-3: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  /* Border Radius */
+
+  --radius-16: 16px;
+  --radius-8: 8px;
+  --radius-pill: 500px;
+}
+
+/*------------------------------*/
+/*        Resets style          */
+/*------------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+img,
+button,
+ion-icon {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+ion-icon {
+  pointer-events: none;
+}
+
+address {
+  font-style: normal;
+}
+
+html {
+  font-family: var(--fontFamily-Poppins);
+  font-size: 10px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  color: var(--text-grey);
+  font-size: var(--fontSize-7);
+  line-height: 1.7;
+  overflow: hidden;
+}
+
+/*------------------------------*/
+/*        General style         */
+/*------------------------------*/
+
+.container {
+  margin-inline: 16px;
+}
+
+main {
+  padding-block-start: 6rem;
+}
+
+.section {
+  padding-block-end: var(--section-spacing);
+}
+
+.heading {
+  color: var(--text-black);
+  line-height: 1.1;
+}
+
+.h1 {
+  font-size: var(--fontSize-3);
+  color: var(--text-black);
+}
+
+.h2 {
+  font-size: var(--fontSize-4);
+  color: var(--text-black);
+}
+
+.h3 {
+  font-size: var(--fontSize-6);
+  color: var(--text-primary);
+}
+
+.h4 {
+  font-size: var(--fontSize-7);
+  font-weight: var(--weight-semiBold);
+  color: var(--text-black);
+}
+
+.btn {
+  height: 44px;
+  padding-inline: 35px;
+  color: var(--text-white);
+  font-weight: var(--weight-semiBold);
+  display: grid;
+  place-content: center;
+}
+
+.btn-primary {
+  border-radius: var(--radius-16);
+}
+
+.btn-secondary {
+  border-radius: var(--radius-8);
+}
+
+.btn-green {
+  background-color: var(--bg-secondary);
+  transition: all 0.5s ease;
+}
+
+.btn-orange {
+  background-color: var(--bg-primary);
+  transition: all 0.5s ease;
+}
+
+.btn-outline {
+  background-color: #fff;
+  color: #fb9c46;
+  box-shadow: inset 0 0 0 3px #fb9c46;
+  transition: all 0.5s ease;
+}
+
+.btn-outline:is(:hover, :active) {
+  background-color: #fb9c46;
+  color: #fff;
+}
+
+.btn-green:is(:hover, :focus-visible) {
+  background-color: #fff;
+  color: #058e6e;
+  box-shadow: inset 0 0 0 3px #058e6e;
+}
+
+.btn-orange:is(:hover, :focus-visible) {
+  background-color: #fff;
+  color: #fb9c46;
+  box-shadow: inset 0 0 0 3px #fb9c46;
+}
+
+.ion-icon {
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.grid-box {
+  display: grid;
+  gap: 50px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-orange {
+  color: var(--text-primary);
+}
+
+.text-green {
+  color: #058e6e;
+}
+
+.ul-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.ul-item {
+  display: grid;
+  grid-template-columns: 0.25fr 1.75fr;
+  gap: 1.6rem;
+  padding: 1.4rem;
+  border-radius: var(--radius-16);
+  background-color: rgba(238, 238, 238, 0.3);
+}
+
+.ul-item .section-text {
+  font-size: var(--fontSize-8);
+}
+
+.work-icon,
+.play-btn {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius-pill);
+}
