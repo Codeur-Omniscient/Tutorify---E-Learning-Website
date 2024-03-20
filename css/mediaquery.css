@@ -56,7 +56,7 @@
 
   /* Testimonial */
   .slider-box {
-    
+    overflow-x: hidden;
     padding-left: 1rem;
   }
 
