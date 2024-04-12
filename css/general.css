@@ -45,7 +45,7 @@
 
   /* Spacing */
 
-  --section-spacing: 90px;
+  --section-spacing: 100px;
 
   /* Shadow */
 
@@ -138,7 +138,7 @@ main {
 }
 
 .section {
-  padding-block-end: var(--section-spacing);
+  padding-block: var(--section-spacing);
 }
 
 .heading {
